@@ -15,8 +15,8 @@ public class hw0902 {
 		int[][]z= new int[3][3];
 // 2.將亂數資料填入到x陣列
 		for(int i=0; i<x.length; i++) {
-			for(int j=0; j< x[i].length;j++) {        // 下兩行簡化成第19行
-				x[i][j] = (int)(Math.random()*31);  // int r =(int)(Math.random()*31)+1;
+			for(int j=0; j< x[i].length;j++) {        // 下兩行簡化成第19行，為啥不是<=，因為index從0開始
+				x[i][j] = (int)(Math.random()*31);    // int r =(int)(Math.random()*31)+1;
 			}                                         // x[i][j] = r;
 	    }	
 // 3.將亂數資料填入到y陣列

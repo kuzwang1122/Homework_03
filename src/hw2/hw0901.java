@@ -1,10 +1,10 @@
-package hw1;
+package hw2;
 
 //第一題
 public class hw0901 {
 	public static void main(String[] args) {
 		int sum = 0;
-		for (int count = 1; count <= 1000; count++) {
+		for (int count = 1; count <=1000; count++) {
 			if (count % 2 == 1) {
 				continue;
 			}
@@ -30,8 +30,8 @@ public class hw0901 {
 		System.out.println("============");
 //第四題
 		System.out.println("第四題:");
-		int y = 1 ;              //為啥要先定義
-		for(int a=1;y<100;a++) { //為啥不是<=100
+		int y = 0 ;              
+		for(int a=1;y<100;a++) {              //為啥不是<=100
 			y=(int)Math.pow(a,2);
 			System.out.print( y +" ");
 	}
