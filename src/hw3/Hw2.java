@@ -3,30 +3,31 @@ package hw3;
 import java.util.*;
 
 public class Hw2 {
+	
 	public static void main(String[] args) {
-
-		int bingo = (int) (Math.random() * 101);
 		
-		Scanner num = new Scanner(System.in);
-
-		System.out.println("請輸入0~100之間的數字");
-
-		int fate = num.nextInt();
-
-		int min = 0 , max = 100;
-
-		while (fate != bingo) {
-			if (fate > bingo) {
-				max = fate;
-				System.out.println("請繼續猜" + min + "~" + fate + "之間的數字");
-				fate = num.nextInt();
+// 請設計一隻程式，會亂數產生一個0～9的數字，
+// 然後可以玩猜數字遊戲，猜錯會顯示錯誤訊息，猜對則顯示正確訊息
+		
+		System.out.println("請猜數字(0~10)");
+		int bingo;
+		bingo = (int) (Math.random() * 11);
+		Scanner fate = new Scanner(System.in);
+		for (int x = 0; x != bingo;) {
+			if (fate.hasNextInt()) {
+				x = fate.nextInt();
 			} else {
-				min = fate;
-				System.out.println("請繼續猜" + fate + "~" + max + "之間的數字");
-				fate = num.nextInt();
+				System.out.println("請輸入整數！");
+				break;
+			}
+			if (x == bingo) {
+				System.out.println("答對了！答案就是" + bingo);
+				break;
+			} else {
+				System.out.println("猜錯囉！");
 			}
 		}
-		System.out.println("答對了!答案就是"+ bingo);
 
+		System.out.println("=================================");
 	}
 }
