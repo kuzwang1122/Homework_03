@@ -22,7 +22,7 @@ public class Hw3 {
 				num++;
 			}
 			if ((b % 10 == 0)) {
-				System.out.println();
+				System.out.println();  
 			} 
 		}
 		System.out.println();

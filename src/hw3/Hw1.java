@@ -5,7 +5,7 @@ import java.util.*;
 public class Hw1 {
 
 	public static void main(String[] args) {
-		
+
 		Scanner input = new Scanner(System.in);
 
 		// 輸入三角形三邊長
@@ -23,10 +23,11 @@ public class Hw1 {
 			System.out.println("正三角形");
 		} else if (a == b || b == c || c == a) {
 			System.out.println("等腰三角形");
+		} else if ((a*a+b*b == c*c) || (a*a+c*c == b*b) || (b*b+c*c == a*a)) {
+			System.out.println("直角三角形");
 		} else {
 			System.out.println("其他三角形");
 		}
-
 	}
 
 }

@@ -1,5 +1,7 @@
 package hw3;
 
+//參考同學的 下半段待思考
+
 import java.util.*;
 
 public class Hw3Bonus {
