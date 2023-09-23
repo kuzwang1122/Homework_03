@@ -1,5 +1,7 @@
 package hw3;
 
+//進階功能:產生0~100亂數,每次猜就會提示你是大於還是小於正確答案
+
 import java.util.*;
 
 public class Hw2Bonus {

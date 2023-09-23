@@ -12,21 +12,33 @@ public class Hw3 {
 
 		Scanner hate = new Scanner(System.in);
 		int a = hate.nextInt();
-		int num = 0;
+		String aaa = String.valueOf(a);
 
 		System.out.println("可選擇的數字：");
-
+		int count = 1;
 		for (int b = 1; b <= 49; b++) {
-			if (!((b >= 10 && b / 10 == a) || b % 10 == a)) {
-				System.out.print(b + "\t");
-				num++;
+			String bbb = String.valueOf(b);
+			if (bbb.contains(aaa)) {
+				continue;
 			}
-			if ((b % 10 == 0)) {
-				System.out.println();  
-			} 
+			if (bbb.contains("0")) {
+				System.out.println();
+			}
+			System.out.print(bbb + " ");
+			count++;
 		}
-		System.out.println();
-		System.out.println("總共有 " + num + " 個數字可選");
+
+//		for (int b = 1; b <= 49; b++) {
+//			if (!((b >= 10 && b / 10 == a) || b % 10 == a)) {
+//				System.out.print(b + "\t");
+//				num++;
+//			}
+//			if ((b % 10 == 0)) {
+//				System.out.println();  
+//			} 
+//		}
+
+		System.out.println("\n總共有 " + count + " 個數字可選");
 
 	}
 }

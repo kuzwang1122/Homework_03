@@ -38,17 +38,25 @@ public class hw0901 {
 		System.out.println("\n============");
 //第五題
 		System.out.println("第五題:");
-		int total = 0;
-		for (int a=1 ; a <=49 ; a++) {
-			int x = a % 10;
-			if (x==4) {
-				continue;		
-			} else if (40 <= a && a<=49 ) {
+		for (int z = 1; z <= 49; z++) {
+			String yyy = String.valueOf(z);
+			if (yyy.contains("4")) {
 				continue;
-			}else {
-				  System.out.print(a + " ") ;
-			  }
-	    }
+			}
+			System.out.print(yyy + " ");
+		}
+	
+//		int total = 0;
+//		for (int a=1 ; a <=49 ; a++) {
+//			int x = a % 10;
+//			if (x==4) {
+//				continue;		
+//			} else if (40 <= a && a<=49 ) {
+//				continue;
+//			}else {
+//				  System.out.print(a + " ") ;
+//			  }
+//	    }
 		System.out.println("\n============");
 //第六題
 		System.out.println("第六題:");
