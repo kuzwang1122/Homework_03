@@ -6,6 +6,8 @@ import java.util.Scanner;
 // 方法為powerXY(int x, int y),功能是會計算x的y次方並回傳結果。 CalTest.java執行後,使用者可
 // 以輸入x與y的值,請加入例外處理機制,讓程式能解決以下狀況:
 
+// ucucucucu
+
 public class Calculator {
 
 	public static void main(String[] args) {
@@ -21,8 +23,8 @@ public class Calculator {
 		try {
 			System.out.println(x+"的"+y+"次方為:"+powerXY(x, y));
 		} 
-		catch (java.util.InputMismatchException e) {
-			System.out.println("請輸入整數，而非帶有小數點或是字元");
+		catch (ArithmeticException e) {
+			System.out.println(e.getMessage());
 		}
 	}
 	
